@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>How to git</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+      @import url('css/default.css');
+      /* @import url('css/mpg.css'); */
+
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# How to git
+
+Lukas Kluft
+
+`github.com/lkluft`
+
+---
+
+# Why version control?
+
+* Collaboration
+
+* Storing Versions (properly)
+
+* Understandings what happened
+
+* Backup
+
+---
+
+# Why version control?
+
+* Collaboration _I'll send you my script via mail._
+
+* Storing Versions (properly) _But it worked yesterday..._ 😭
+
+* Understandings what happened _I did not change anything!!11!_ 🤬
+
+* Backup _I replaced the wrong my_file_2_final_final.py_ 😱
+---
+
+# First steps
+
+There are many version control systems out there (e.g. Subversion, Mercurial)
+
+We will focus on `git` which is the **de facto standard**
+
+## As easy as **1, 2, 3**
+```bash
+cd my_project/  # 1
+git init .  # 2
+git commit -m 'Initial commit'  # 3
+```
+## That's it!
+
+---
+
+class: middle, center, inverse
+
+# git brother is watching you!
+
+---
+
+# The basic workflow
+
+* `git` offers **plenty of functionality** that is extensively "documented"
+(_StackOverflow. You know it's true._)
+
+* You will only need a **handful of commands** in your day to day work:
+
+  ```bash
+  git status  # show which files have changed
+  ```
+
+  ```bash
+  git diff my_file  # show what has changed
+  ```
+
+  ```bash
+  git add my_file  # stage changes
+  ```
+
+  ```bash
+  git commit  # commit your changes
+  ```
+
+---
+
+# Good habits
+
+An **atomic commit** consists of changes related to one task, one logical unit.
+* Commit **frequently**
+* Commit each fix or task as a **separate** change
+* Only commit **completed blocks** of work
+
+Write **meaningful** commit messages
+1. Use the **imperative mood** in the subject line (**what** is done)
+1. **Limit** the subject line to 50 characters
+1. Use the body to explain **what** and **why**
+
+---
+
+# ~~de~~centralized version control
+
+Although ``git`` is a **centralized** version control system it might be useful
+to **backup** your repository on an external server (e.g. GitHub, GitLab,
+remote machine, ...):
+
+1. Setup a **remote repository** on 
+```bash
+git remote add origin https://github.com/user/repo.git
+```
+or clone an existing remote repository
+```bash
+git clone https://github.com/user/repo.git
+```
+
+2. Push your work to a different server to **backup** your work
+```bash
+git push
+```
+
+## Remotes allow for easy **collaboration** on source code
+
+---
+
+class: center, middle, inverse
+
+# Thanks for your attention!
+
+You can find this presentation on _github.com/lkluft/git-intro_ &#x1f609;
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+      remark.macros.scale = function (percentage) {
+        var url = this;
+        return '<img src="' + url + '" style="width: ' + percentage + '" />';
+      };
+
+      var slideshow = remark.create({
+        ratio: '16:9',
+        highlightStyle: 'sunburst',
+        highlightLines: true,
+      });
+    </script>
+  </body>
+</html>

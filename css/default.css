@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:regular);
+@import url(https://fonts.googleapis.com/css?family=Roboto:light,regular);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:regular);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: regular;
+  letter-spacing: 0.5px;
+  color: rgb(51,51,51);
+  font-size: 6;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(66, 165, 245);
+}
+h1 {
+  font-weight: light;
+  letter-spacing: -1.5px;
+}
+h2 {
+  font-weight: light;
+  letter-spacing: -0.5px;
+}
+h3 {
+  font-weight: regular;
+  letter-spacing: 0px;
+}
+
+strong, em {
+  color: #80d6ff;
+}
+
+del {
+  color: #888888;
+}
+
+.remark-code, .remark-inline-code {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: regular;
+  color: rgb(51,51,51);
+}
+
+.inverse {
+  background: rgb(66, 165, 245);
+  color: #f3f3f3;
+}
+.inverse h1, .inverse h2, .inverse h3{
+  color: #f3f3f3;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  letter-spacing: 0px;
+}
