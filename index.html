@@ -46,6 +46,8 @@ There are many version control systems out there (e.g. Subversion, Mercurial)
 
 We will focus on `git` which is the **de facto standard**
 
+--
+
 ## As easy as **1, 2, 3**
 ```bash
 cd my_project/
@@ -55,6 +57,8 @@ git commit -m 'Initial commit'  # 3
 ```
 **Init**ialize your local repository, **add** the whole directory content
 and make your first **commit**.
+
+--
 
 ## That's it!
 
@@ -68,26 +72,28 @@ class: middle, center, inverse
 
 # The basic workflow
 
-* `git` offers **plenty of functionality** that is extensively "documented"
-(_StackOverflow. You know it's true._)
+`git` offers **plenty of functionality** that is extensively "documented"
+(_StackOverflow... you know it's true_)
 
-* You will only need a **handful of commands** in your day to day work:
+--
 
-  ```bash
-  git status  # show which files have changed
-  ```
+You will only need a **handful of commands** in your day to day work:
 
-  ```bash
-  git diff my_file  # show what has changed
-  ```
+```bash
+git status  # show which files have changed
+```
 
-  ```bash
-  git add my_file  # stage changes
-  ```
+```bash
+git diff my_file  # show what has changed
+```
 
-  ```bash
-  git commit  # commit your changes
-  ```
+```bash
+git add my_file  # stage changes
+```
+
+```bash
+git commit  # commit your changes
+```
 
 ---
 
@@ -97,6 +103,8 @@ An **atomic commit** consists of changes related to one task, one logical unit.
 * Commit **frequently**
 * Commit each fix or task as a **separate** change
 * Only commit **completed blocks** of work
+
+--
 
 Write **meaningful** commit messages
 1. Use the **imperative mood** in the subject line (**what** is done)
@@ -109,21 +117,21 @@ Write **meaningful** commit messages
 
 Although ``git`` is a **decentralized** version control system it might be useful
 to **backup** your repository on an external server (e.g. GitHub, GitLab,
-remote machine, ...):
+remote machine, ...).
 
 1. Setup a **remote repository** on 
-```bash
-git remote add origin https://github.com/user/repo.git
-```
-or clone an existing remote repository
-```bash
-git clone https://github.com/user/repo.git
-```
+   ```bash
+   git remote add origin https://github.com/user/repo.git
+   ```
+   or clone an existing remote repository
+   ```bash
+   git clone https://github.com/user/repo.git
+   ```
 
 2. Push your work to a different server to **backup** your work
-```bash
-git push
-```
+   ```bash
+   git push
+   ```
 
 ### Remotes allow for easy **collaboration** on source code
 
