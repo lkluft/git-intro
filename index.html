@@ -113,27 +113,36 @@ Write **meaningful** commit messages
 
 ---
 
-# __de__centralized version control
+# __De__centralized version control
 
-Although ``git`` is a **decentralized** version control system it might be useful
-to **backup** your repository on an external server (e.g. GitHub, GitLab,
-remote machine, ...).
+``git`` is a **decentralized** version control system; every repository
+contains the full version history
 
-1. Setup a **remote repository** on 
+In addition, it might be useful to **backup** your repository on an external
+machine (e.g. GitHub, GitLab, ...)
+
+1. Setup a **remote** repository:
    ```bash
    git remote add origin https://github.com/user/repo.git
    ```
-   or clone an existing remote repository
-   ```bash
-   git clone https://github.com/user/repo.git
-   ```
+   (When you `git clone` an existing repository, the remote is already
+   configured)
 
-2. Push your work to a different server to **backup** your work
+3. Use your normal `add`, `commit` workflow to work on your code
+
+2. Simply **push** your changes to a different machine to **backup** your work
    ```bash
    git push
    ```
 
-### Remotes allow for easy **collaboration** on source code
+---
+
+class: middle, center, inverse
+
+# ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
+# Start using git today
+# Get a backup FOR FREE
+# ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
 
 ---
 
