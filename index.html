@@ -28,7 +28,7 @@ Lukas Kluft
 
 --
 
-* Collaboration `Sample File (conflicted copy 2019-11-21)`
+* Collaboration _Sample File (conflicted copy 2019-11-21)_
 
 --
 
@@ -48,7 +48,7 @@ Lukas Kluft
 
 There are many version control systems out there (e.g. Subversion, Mercurial)
 
-We will focus on `git` which is the **de facto standard**
+We will focus on Git (`git`) which is the **de facto standard**
 
 --
 
@@ -59,8 +59,8 @@ git init .  # 1
 git add .  # 2
 git commit -m 'Initial commit'  # 3
 ```
-**Init**ialize your local repository, **add** the whole directory content
-and make your first **commit**.
+**Init**ialize a repository, **add** the whole directory content, and
+**commit** it
 
 --
 
@@ -77,7 +77,7 @@ class: middle, center, inverse
 # The basic workflow
 
 `git` offers **plenty of functionality** that is extensively "documented"
-(_StackOverflow... you know it's true_)
+(_on StackOverflow... you know it's true_)
 
 --
 
@@ -103,7 +103,7 @@ git commit  # commit your changes
 
 # Good habits
 
-An **atomic commit** consists of changes related to one task, one logical unit.
+An **atomic commit** consists of changes related to one task, one logical unit
 * Commit **frequently**
 * Commit each fix or task as a **separate** change
 * Only commit **completed blocks** of work
@@ -113,7 +113,7 @@ An **atomic commit** consists of changes related to one task, one logical unit.
 Write **meaningful** commit messages
 1. Use the **imperative mood** in the subject line (**what** is done)
 1. **Limit** the subject line to 50 characters
-1. Use the body to explain what and especially **why** changes have been
+1. Use the body to elaborate **why** changes have been
 performed
 
 ---
@@ -129,11 +129,18 @@ class: middle, center, inverse
 
 # __De__centralized version control
 
-`git` is a **decentralized** version control system; every repository
-contains the full version history
+`git` is a **decentralized** version control system
 
-In addition, it might be useful to **backup** your repository on an external
-machine (e.g. GitHub, GitLab, ...)
+Every repository contains the full version history
+
+This is useful as it allows you to work without depending on a remote server
+
+But, it might be useful to **backup** your repository on an external
+machine from time to time (e.g. GitHub, GitLab, ...)
+
+---
+
+# Working with a remote
 
 1. Setup a **remote** repository:
    ```bash
