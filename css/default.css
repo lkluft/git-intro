@@ -10,6 +10,7 @@
     --font-color-light: #888888;
     --primary-color: #42a5f5;
     --primary-color-light: #80d6ff;
+    --secondary-color: #ffa726;
     --inverse-font-color: #f3f3f3;
 }
 
@@ -26,6 +27,17 @@ body {
   font-weight: regular;
   letter-spacing: 0.5px;
   color: var(--font-color);
+  background: var(--bg-color);
+}
+
+div.container {
+    font-size: x-large;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-right: -50%;
+    transform:
+    translate(-50%, -50%);
 }
 
 .remark-slide-content {
@@ -56,6 +68,24 @@ strong, em {
 
 del {
   color: var(--font-color-light);
+}
+
+a {
+  text-decoration: none;
+}
+a:link {
+  color: var(--primary-color);
+}
+a:visited {
+  color: #5c6bc0;
+}
+a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+a:active {
+  color: var(--secondary-color;
+  background-color: var(--bg-color);
 }
 
 .remark-code, .remark-inline-code {

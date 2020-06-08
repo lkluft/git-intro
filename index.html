@@ -1,194 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>How to git</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <style type="text/css">
-      @import url('css/default.css');
-      /* @import url('css/mpg.css'); */
-
-    </style>
-  </head>
-  <body>
-    <textarea id="source">
-
-class: center, middle, inverse
-
-# How to git
-
-Lukas Kluft
-
-`github.com/lkluft`
-
----
-
-# Why version control?
-
-* Exchange _I'll send you my script via mail._
-
-* Collaboration _Sample File (conflicted copy 2019-11-21)_
-
-* Storing versions (properly) _But it worked yesterday..._ 😭
-
-* Understanding what happened _I did not change anything!!11!_ 🤬
-
-* Backup _I replaced the wrong my_file_2_final_final.py_ 😱
-
----
-
-# First steps
-
-There are many version control systems out there (e.g. Subversion, Mercurial)
-
-We will focus on Git (`git`) which is the **de facto standard**
-
---
-
-## As easy as **1, 2, 3**
-```bash
-cd my_project/
-git init .  # 1
-git add .  # 2
-git commit -m 'Initial commit'  # 3
-```
-**Init**ialize a repository, **add** the whole directory content, and
-**commit** it
-
---
-
-## That's it!
-
----
-
-class: middle, center, inverse
-
-# git brother is watching you!
-
----
-
-# The basic workflow
-
-`git` offers **plenty of functionality** that is extensively "documented"
-(_on StackOverflow... you know it's true_)
-
---
-
-You will only need a **handful of commands** in your day to day work:
-
-```bash
-git status  # show which files have changed
-```
-
-```bash
-git diff my_file  # show what has changed
-```
-
-```bash
-git add my_file  # stage changes
-```
-
-```bash
-git commit  # commit your changes
-```
-
----
-
-# Good habits
-
-An **atomic commit** consists of changes related to one task, one logical unit
-* Commit **frequently**
-* Commit each fix or task as a **separate** change
-* Only commit **completed blocks** of work
-
---
-
-Write **meaningful** commit messages
-1. Use the **imperative mood** in the subject line (**what** is done)
-1. **Limit** the subject line to 50 characters
-1. Use the body to elaborate **why** changes have been
-performed
-
----
-
-class: middle, center, inverse
-
-# ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
-# Start using git today
-# Get a backup FOR FREE
-# ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
-
----
-
-# __De__centralized version control
-
-`git` is a **decentralized** version control system
-
-Every repository contains the full version history
-
-This is useful as it allows you to work without depending on a remote server
-
-But, it might be useful to **backup** your repository on an external
-machine from time to time (e.g. GitHub, GitLab, ...)
-
----
-
-# Working with a remote
-
-1. Setup a **remote** repository:
-   ```bash
-   git remote add origin https://github.com/user/repo.git
-   ```
-   (When you `git clone` an existing repository, the remote is already
-   configured)
-
-3. Use your normal `add`, `commit` workflow to work on your code
-
-2. Simply **push** your changes to a different machine to **backup** your work
-   ```bash
-   git push
-   ```
-
----
-
-# Collaboration
-
- * There are different providers that allow users to host their git
- repositories (Github, GitLab, Bitbucket).
-
-* This is a crucial part in **collaborating** with other developers, for
-example in the process of open source software development.
-
---
-
-* You can **fork** a repository to create your own copy server-side
-
-* After pushing your changes to your fork you can request the original author
-to pull your changes to their repository (open a **pull request**)
-
----
-
-class: center, middle, inverse
-
-# Thanks for your attention!
-
-You can find this presentation on `github.com/lkluft/git-intro` 😉
-
-
-    </textarea>
-    <script src="https://remarkjs.com/downloads/remark-latest.min.js" type="text/javascript">
-    </script>
-    <script type="text/javascript">
-      remark.macros.scale = function (percentage) {
-        var url = this;
-        return '<img src="' + url + '" style="width: ' + percentage + '" />';
-      };
-
-      var slideshow = remark.create({
-        ratio: '16:9',
-        highlightStyle: 'sunburst',
-        highlightLines: true,
-        navigation: {scroll: false, click: true},
-      });
-    </script>
-  </body>
+<head>
+<title>Git Introduction</title>
+<style type="text/css">
+    @import url('css/default.css');
+</style>
+</head>
+<body>
+
+<div class="container">
+<h1>Git Rich or Die Tryin'</h1>
+<ol>
+    <li><a href="intro.html">How to git?</a></li>
+    <li><a href="remote.html">Spread the word</a></li>
+</ol>
+</div>
+
+
+</body>
 </html>
