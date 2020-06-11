@@ -71,17 +71,16 @@ del {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:link {
-  color: var(--primary-color);
+  color: var(--font-color);
 }
 a:visited {
-  color: #5c6bc0;
+  color: var(--font-color);
 }
 a:hover {
   color: var(--secondary-color);
-  text-decoration: underline;
 }
 a:active {
   color: var(--secondary-color);
