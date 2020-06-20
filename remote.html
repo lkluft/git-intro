@@ -18,20 +18,7 @@ Lukas Kluft
 
 
     </textarea>
-    <script src="https://remarkjs.com/downloads/remark-latest.min.js" type="text/javascript">
-    </script>
-    <script type="text/javascript">
-      remark.macros.scale = function (percentage) {
-        var url = this;
-        return '<img src="' + url + '" style="width: ' + percentage + '" />';
-      };
-
-      var slideshow = remark.create({
-        ratio: '16:9',
-        highlightStyle: 'dracula',
-        highlightLines: true,
-        navigation: {scroll: false, click: false},
-      });
-    </script>
+    <script src="src/remark-latest.min.js" type="text/javascript"></script>
+    <script src="src/remark-settings.js" type="text/javascript"></script>
   </body>
 </html>
