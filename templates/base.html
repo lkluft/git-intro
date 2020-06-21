@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Death to the default</title>
+      <title>{{ title }}</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" href="css/default.css">
   </head>
   <body>
     <textarea id="source">
 
-class: center, middle, inverse
-
-# Death to the default
-
-Lukas Kluft
-
-`github.com/lkluft`
-
+{% block body %} {% endblock %}
 
     </textarea>
     <script src="src/remark-latest.min.js" type="text/javascript"></script>
