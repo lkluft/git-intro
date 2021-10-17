@@ -16,13 +16,12 @@ class: middle, center, inverse
 
 # __De__centralized version control
 
-`git` is a **decentralized** version control system
-
+`git` is a **decentralized** version control system:
 Every repository contains the full version history
 
-This is useful as it allows you to work without depending on a remote server
+This is useful as it allows the user to work without depending on a remote server
 
-But, it might be useful to **backup** your repository on an external
+However, it might be useful to **backup** your repository on an external
 machine from time to time (e.g. GitHub, GitLab, ...)
 
 ---
@@ -40,25 +39,40 @@ machine from time to time (e.g. GitHub, GitLab, ...)
 
 2. Simply **push** your changes to a different machine to **backup** your work
    ```bash
-   git push
+   git push <remote> <branch>
    ```
+
+---
+
+# Distributing your repo
+
+* There are various providers that allow you to host your git
+  repositories (Github, GitLab, Bitbucket) and to **collaborate** with other
+  developers
+
+* You can **clone** a repository to create your own local copy of the
+  repository
+  ```bash
+  git clone origin https://github.com/user/repo.git
+  ```
+  This command will will automatically set the remote "origin"
 
 ---
 
 # Collaboration
 
- * There are different providers that allow users to host their git
- repositories (Github, GitLab, Bitbucket).
+* Platforms like GitHub and Gitlab provide functionality for **collarboration**
+ between different users
 
-* This is a crucial part in **collaborating** with other developers, for
-example in the process of open source software development.
+* The common workflow is build around so called **pull requests** (sometimes
+  called merge requests)
 
---
+* The basic workflow consists of
 
-* You can **fork** a repository to create your own copy server-side
-
-* After pushing your changes to your fork you can request the original author
-to pull your changes to their repository (open a **pull request**)
+  1. Creating a **fork** which is a copy of the reop server-side
+  2. Commiting and pushing your changes to your own fork
+  3. Sending a pull request to the maintainer of the original repo, asking them
+     to incorporate your changes
 
 {% endraw %}
 {% endblock content %}
