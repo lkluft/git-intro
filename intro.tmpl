@@ -89,5 +89,49 @@ Write **meaningful** commit messages
 1. Use the body to elaborate **why** changes have been
 performed
 
+---
+
+class: middle, center, inverse
+
+# Learning by doing!
+
+---
+
+# Exercises
+
+* Create a directory and initialize a git repository
+* Create a "Hello world" file and stage it
+* Commit the file
+* Modify the file content and view the changes using diff
+
+---
+
+# Solutions 1
+
+* Create a directory and initialize a git repository
+  ```sh
+  mkdir test-repo && cd test-repo
+  git init .
+  ```
+* Create a "Hello world" file and stage it
+  ```sh
+  echo "Hello world" > world.txt
+  git add world.txt
+  ```
+
+---
+
+# Solutions 2
+
+* Commit the file
+  ```sh
+  git commit -m "Add 'Hello world' file"
+  ```
+* Modify the file content and view the changes using diff
+  ```sh
+  echo "changes" >> world.txt
+  git diff
+  ```
+
 {% endraw %}
 {% endblock content %}
