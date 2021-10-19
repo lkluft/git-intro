@@ -26,6 +26,21 @@ machine from time to time (e.g. GitHub, GitLab, ...)
 
 ---
 
+# Distributing your repo
+
+* There are various providers that allow you to host your git
+  repositories (Github, GitLab, Bitbucket) and to **collaborate** with other
+  developers
+
+* You can **clone** a repository to create your own local copy of the
+  repository
+  ```bash
+  git clone origin https://github.com/user/repo.git
+  ```
+  This command will will automatically set the remote "origin"
+
+---
+
 # Working with a remote
 
 1. Setup a **remote** repository:
@@ -44,21 +59,6 @@ machine from time to time (e.g. GitHub, GitLab, ...)
 
 ---
 
-# Distributing your repo
-
-* There are various providers that allow you to host your git
-  repositories (Github, GitLab, Bitbucket) and to **collaborate** with other
-  developers
-
-* You can **clone** a repository to create your own local copy of the
-  repository
-  ```bash
-  git clone origin https://github.com/user/repo.git
-  ```
-  This command will will automatically set the remote "origin"
-
----
-
 # Updating your local repo
 
 * When working from different machines or with other developers your local repo
@@ -71,6 +71,39 @@ machine from time to time (e.g. GitHub, GitLab, ...)
 
 * The **pull** command will update the local commit history and automatically
   apply all new commits from the remote repository
+
+---
+
+class: middle, center, inverse
+
+# Learning by doing!
+
+---
+
+# Exercises
+
+* Navigate to gitlab.dkrz.de and create a personal repository
+* Add your personal repository as remote `origin`
+* Push your local history to the DKRZ server
+* Inspect your repository in a web browser
+
+---
+
+# Solutions
+
+* Navigate to [gitlab.dkrz.de]() and create a personal repository
+* Add your personal repository as remote `origin`
+  ```sh
+  git remote add origin https://gitlab.dkrz.de/<YOUR_USERNAME>/<YOUR_REPO>.git
+  ```
+* Push your local history to the DKRZ server
+  ```sh
+  git push -u origin master
+  ```
+* Inspect your repository in a web browser
+
+---
+
 
 {% endraw %}
 {% endblock content %}
