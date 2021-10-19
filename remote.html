@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Push to talk</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="css/default.css">
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+class: center, middle, inverse
+
+# Push to talk
+
+Lukas Kluft
+
+[github.com/lkluft](https://www.github.com/lkluft)
+
+---
+
+
+
+
+class: middle, center, inverse
+
+# ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
+# Start using git today
+# Get a backup FOR FREE
+# ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
+
+---
+
+# __De__centralized version control
+
+`git` is a **decentralized** version control system:
+Every repository contains the full version history
+
+This is useful as it allows the user to work without depending on a remote server
+
+However, it might be useful to **backup** your repository on an external
+machine from time to time (e.g. GitHub, GitLab, ...)
+
+---
+
+# Distributing your repo
+
+* There are various providers that allow you to host your git
+  repositories (Github, GitLab, Bitbucket) and to **collaborate** with other
+  developers
+
+* You can **clone** a repository to create your own local copy of the
+  repository
+  ```bash
+  git clone origin https://github.com/user/repo.git
+  ```
+  This command will will automatically set the remote "origin"
+
+---
+
+# Working with a remote
+
+1. Setup a **remote** repository:
+   ```bash
+   git remote add origin https://github.com/user/repo.git
+   ```
+   (When you `git clone` an existing repository, the remote is already
+   configured)
+
+3. Use your normal `add`, `commit` workflow to work on your code
+
+2. Simply **push** your changes to a different machine to **backup** your work
+   ```bash
+   git push <remote> <branch>
+   ```
+
+---
+
+# Updating your local repo
+
+* When working from different machines or with other developers your local repo
+  and the remote can get out of sync
+
+* You can update your local repository by **pulling** changes from the server
+  ```bash
+  git pull origin master
+  ```
+
+* The **pull** command will update the local commit history and automatically
+  apply all new commits from the remote repository
+
+---
+
+class: middle, center, inverse
+
+# Learning by doing!
+
+---
+
+# Exercises
+
+* Navigate to gitlab.dkrz.de and create a personal repository
+* Add your personal repository as remote `origin`
+* Push your local history to the DKRZ server
+* Inspect your repository in a web browser
+
+---
+
+# Solutions
+
+* Navigate to [gitlab.dkrz.de]() and create a personal repository
+* Add your personal repository as remote `origin`
+  ```sh
+  git remote add origin https://gitlab.dkrz.de/<YOUR_USERNAME>/<YOUR_REPO>.git
+  ```
+* Push your local history to the DKRZ server
+  ```sh
+  git push -u origin master
+  ```
+* Inspect your repository in a web browser
+
+
+
+
+---
+
+class: center, middle, inverse
+
+# Thanks for your attention!
+
+You can find this presentation on
+[github.com/lkluft/git-intro](https://www.github.com/lkluft/git-intro) 😉
+
+
+
+    </textarea>
+    <script src="src/remark-latest.min.js" type="text/javascript"></script>
+    <script src="src/remark-settings.js" type="text/javascript"></script>
+  </body>
+</html>

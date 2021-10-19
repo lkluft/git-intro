@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>How to git?</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="css/default.css">
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+class: center, middle, inverse
+
+# How to git?
+
+Lukas Kluft
+
+[github.com/lkluft](https://www.github.com/lkluft)
+
+---
+
+
+
+
+# Why version control?
+
+* Exchange _I'll send you my script via mail._
+
+* Collaboration _Sample File (conflicted copy 2019-11-21)_
+
+* Storing versions (properly) _But it worked yesterday..._ 😭
+
+* Understanding what happened _I did not change anything!!11!_ 🤬
+
+* Backup _I replaced the wrong my_file_2_final_final.py_ 😱
+
+---
+
+# First steps
+
+There are many version control systems out there (e.g. Subversion, Mercurial)
+
+We will focus on Git (`git`) which is the **de facto standard**
+
+--
+
+## As easy as **1, 2, 3**
+```bash
+cd my_project/
+git init .  # Initialize a repository
+git add .  # Add the whole directory content
+git commit -m "Initial commit"  # Commit your changes
+```
+
+--
+
+## That's it!
+
+---
+
+class: middle, center, inverse
+
+# git brother is watching you!
+
+---
+
+# The basic workflow
+
+`git` offers **plenty of functionality** that is extensively "documented"
+(_on StackOverflow... you know it's true_)
+
+--
+
+You will only need a **handful of commands** in your day to day work:
+
+```bash
+git status  # show which files have changed
+```
+
+```bash
+git diff my_file  # show what has changed
+```
+
+```bash
+git add my_file  # stage changes
+```
+
+```bash
+git commit  # commit your changes
+```
+
+---
+
+# Good habits
+
+An **atomic commit** consists of changes related to one task, one logical unit
+* Commit **frequently**
+* Commit each fix or task as a **separate** change
+* Only commit **completed blocks** of work
+
+--
+
+Write **meaningful** commit messages
+1. Use the **imperative mood** in the subject line (**what** is done)
+1. **Limit** the subject line to 50 characters
+1. Use the body to elaborate **why** changes have been
+performed
+
+---
+
+class: middle, center, inverse
+
+# Learning by doing!
+
+---
+
+# Exercises
+
+* Create a directory and initialize a git repository
+* Create a "Hello world" file and stage it
+* Commit the file
+* Modify the file content and view the changes using diff
+
+---
+
+# Solutions 1
+
+* Create a directory and initialize a git repository
+  ```sh
+  mkdir test-repo && cd test-repo
+  git init .
+  ```
+* Create a "Hello world" file and stage it
+  ```sh
+  echo "Hello world" > world.txt
+  git add world.txt
+  ```
+
+---
+
+# Solutions 2
+
+* Commit the file
+  ```sh
+  git commit -m "Add 'Hello world' file"
+  ```
+* Modify the file content and view the changes using diff
+  ```sh
+  echo "changes" >> world.txt
+  git diff
+  ```
+
+
+
+
+---
+
+class: center, middle, inverse
+
+# Thanks for your attention!
+
+You can find this presentation on
+[github.com/lkluft/git-intro](https://www.github.com/lkluft/git-intro) 😉
+
+
+
+    </textarea>
+    <script src="src/remark-latest.min.js" type="text/javascript"></script>
+    <script src="src/remark-settings.js" type="text/javascript"></script>
+  </body>
+</html>
